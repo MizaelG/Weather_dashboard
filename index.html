@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main class="row">
+        <div class="col-lg-3 bg-light pt-3 pb-3">
+            <form id="search-cities">
+                <h2>Search for a City:</h2>
+                <input type="text" id="city">
+                <button id="searchBtn">
+                    <i class="fas-fa-search-location"></i></button>
+            </form>
+            <h2 class="search">Search History:</h2>
+            <button id="clear-history">Clear</button>
+            <div class="col" id="search-history">
+                <div class="container" id="container"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="mt-4 col-md-12" id="weather-data">
+        <div class="card weather" id="weather-card">
+            <section class="card-body">
+                <h2 class="card-title"></h2>
+                <p class="card-info" id="temparture"></p>
+                <p class="card-info" id="Humidity"></p>
+                <p class="card-info" id="Wind"></p>
+                <p class="card-info"><span id="uvi"></span></p>
+            </section>
+        </div>
+        <h2 class="future-header"></h2>
+        <div class="row" id="future-cast">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>

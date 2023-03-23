@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    border: border-box;
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+    color: azure;
+}
+
+
+button {
+    background-color: lightskyblue;
+    color: azure;
+}
+
+.row {
+    margin-left: 0;
+}
+
+.search {
+    margin-top: 50px;
+    border: black;
+}
+
+.weather {
+    display: none;
+}
